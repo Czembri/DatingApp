@@ -43,6 +43,7 @@ export class AccountService {
   }
   
   setCurrentUser(user: User) {
+    console.warn(user)
     this.currentUserSource.next(user);
   }
 }
